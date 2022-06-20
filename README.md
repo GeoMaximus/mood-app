@@ -1,6 +1,6 @@
 <h1>Employee mood of the day</h1>
 
-<p> Pages: </p>
+<h3> Pages: </h3>
 <ul>
   <li> Log in </li>
   <li> Register </li>
@@ -8,7 +8,7 @@
   <li> Manager page </li>
  </ul>
  
-<p> User page components </p>
+<h3> User page components </h3>
 <ul>
   <li> Header with
     <ol>
@@ -33,7 +33,7 @@
   </li>
 </ul>
 
-<p> Manager page components </p>
+<h3> Manager page components </h3>
 <ul>
   <li> Header with
     <ol>
