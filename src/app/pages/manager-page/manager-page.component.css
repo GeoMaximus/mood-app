@@ -1,0 +1,16 @@
+.container {
+    height: 200px;
+    width: auto;
+    align-items: center;
+}
+.roulette-user-cards {
+    margin-top: 100px;
+}
+
+.overall-mood-team {    
+    height: 400px;
+    width: auto;
+    margin-top: 60px;
+    border: 3px solid black;
+    text-align: center;
+}

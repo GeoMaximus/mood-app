@@ -12,7 +12,9 @@ import { ManagerPageComponent } from './pages/manager-page/manager-page.componen
 import { NotfoundPageComponent } from './pages/notfound-page/notfound-page.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
-
+import { ChartComponent } from './components/chart/chart.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { LineGraphComponent } from './components/line-graph/line-graph.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,10 @@ import { SignupPageComponent } from './pages/signup-page/signup-page.component';
     ManagerPageComponent,
     NotfoundPageComponent,
     LoginPageComponent,
-    SignupPageComponent
+    SignupPageComponent,
+    ChartComponent,
+    ModalComponent,
+    LineGraphComponent
   ],
   imports: [
     BrowserModule,
