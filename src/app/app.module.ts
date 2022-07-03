@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +18,10 @@ import { ModalComponent } from './components/modal/modal.component';
 import { LineGraphComponent } from './components/line-graph/line-graph.component';
 import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-chart.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { LoginModule } from './modules/login/login.module';
+import { RegisterModule } from './modules/register/register.module';
 
 
 @NgModule({
@@ -35,12 +39,16 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     ChartComponent,
     ModalComponent,
     LineGraphComponent,
-    DoughnutChartComponent
+    DoughnutChartComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
+    LoginModule,
+    RegisterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

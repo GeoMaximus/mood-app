@@ -13,7 +13,9 @@ import {MatButtonModule} from '@angular/material/button';
     LoginRoutingModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
-  ]
+    MatButtonModule,
+    LoginModule
+  ],
+  exports: [LoginComponent]
 })
 export class LoginModule { }

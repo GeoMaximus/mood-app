@@ -16,6 +16,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatInputModule,
     MatButtonModule,
     MatSelectModule,
-  ]
+    RegisterModule
+  ],
+  exports: [RegisterComponent]
 })
 export class RegisterModule { }
