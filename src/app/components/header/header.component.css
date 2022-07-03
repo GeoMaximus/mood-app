@@ -12,7 +12,6 @@ html {
     border: 0px;
     display: flex;
     justify-content: flex-end;
-    background-image: linear-gradient(rgb(202, 220, 231), white);
 }
 
 .top_menu_button {

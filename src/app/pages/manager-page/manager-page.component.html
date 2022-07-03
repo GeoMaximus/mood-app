@@ -1,15 +1,25 @@
-
 <div class="container">
     <app-header></app-header>
     <div class="roulette-user-cards">
+        <h1 class="chart-title">Your team</h1>
+        <app-user-card></app-user-card>
         <app-user-card></app-user-card>
         <app-user-card></app-user-card>
         <app-user-card></app-user-card>
         <app-user-card></app-user-card>
         <app-user-card></app-user-card>
     </div>
+    <div class="doughnut-chart" id="doughnut">
+        <h1 class="chart-title">Overall mood of the team</h1>
         <app-doughnut-chart></app-doughnut-chart>
+    </div>
+    <div class="bar-chart" id="bar">
+        <h1 class="chart-title">History of team mood</h1>
         <app-chart></app-chart>
+    </div>
+    <div class="line-chart" id="line">
+        <h1 class="chart-title">Evolution of team mood</h1>
         <app-line-graph></app-line-graph>
-    <app-footer></app-footer>
+    </div>
+   <app-footer></app-footer>
 </div>

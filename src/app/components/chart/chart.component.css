@@ -1,6 +1,7 @@
-#divChart {
-    width: 1200px;
-    height: 1200px;
-    display: flex;
-    justify-content: center;
+#chart-div {
+    width: 80%; /* Can be in percentage also. */
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
 }

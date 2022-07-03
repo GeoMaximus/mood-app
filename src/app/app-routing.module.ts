@@ -12,7 +12,6 @@ const routes: Routes = [
   { path: 'user', component: UserPageComponent},
   { path: 'manager', component: ManagerPageComponent},
   { path: '**', component: NotfoundPageComponent}
-
 ];
 
 @NgModule({
