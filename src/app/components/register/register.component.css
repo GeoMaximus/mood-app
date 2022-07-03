@@ -129,3 +129,12 @@ mat-option {
 ::ng-deep .mat-select-value {
   color:#0a1686;
 }
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{
+  background-color: #F1F4FA;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-underline::before{
+  background-color: #5D64B8;
+  height: 2px !important;
+}

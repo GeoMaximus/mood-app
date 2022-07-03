@@ -18,6 +18,8 @@ import { ModalComponent } from './components/modal/modal.component';
 import { LineGraphComponent } from './components/line-graph/line-graph.component';
 import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-chart.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginModule } from './modules/login/login.module';
+import { RegisterModule } from './modules/register/register.module';
 
 
 @NgModule({
@@ -41,6 +43,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
+    LoginModule,
+    RegisterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
