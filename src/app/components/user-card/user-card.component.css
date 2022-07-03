@@ -1,0 +1,59 @@
+.container {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+.user_card {
+    display: inline-block;
+    border: 1px solid grey;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    box-shadow: 0 2px 7px 0 #dfdfdf;
+    width: 300px;
+    margin: 20px;
+    background: #fafafa;
+    text-align: center;
+  }
+  
+.thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 50px;
+    background: #f0f0f0;
+}
+
+.thumbnail img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+  
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+  
+button:hover, a:hover {
+    opacity: 0.7;
+}
