@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="head">
+      <img src="assets/images/logo.jpg" />
+      <h2>~ Mood Tracking ~</h2>
+      <hr>
+      <h1>Create Account</h1>
+      <hr>
+    </div>
+  
+    <body>
+     
+      <div class="input">
+        <mat-form-field appearance="fill">
+          <mat-label>First Name</mat-label>
+          <input matInput #fname (keyup)="setFirstName(fname.value)">
+        </mat-form-field>
+      </div>
+  
+      <div class="input">
+        <mat-form-field appearance="fill">
+          <mat-label>Last Name</mat-label>
+          <input matInput #lname (keyup)="setLastName(lname.value)">
+        </mat-form-field>
+      </div>
+
+      <div class="input">
+        <mat-form-field appearance="fill">
+          <mat-label>Email Address</mat-label>
+          <input matInput #email (keyup)="setEmail(email.value)">
+        </mat-form-field>
+      </div>
+
+      <div class="input">
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input type="password"matInput #password (keyup)="setPassword(password.value)">
+        </mat-form-field>
+      </div>
+
+      <div *ngIf="empty">
+        <div class="error">* All the fields must be completed! *</div>
+      </div>
+
+      <div class="input" >
+        <mat-form-field appearance="fill">
+            <mat-label >Select Manager</mat-label>
+            <mat-select>
+              <mat-option value="one">First option</mat-option>
+              <mat-option value="two">Second option</mat-option>
+              <mat-option value="two">Third option</mat-option>
+            </mat-select>
+          </mat-form-field>
+      </div>
+      
+  
+      <div class="button">
+        <button mat-button (click)="ifSignUpPressed()">Sign Up</button>
+      </div>
+
+      <a mat-button (click)="goToLogin()"  target="_blank">Return to Login Page</a>
+  
+    </body>
+  </div>
