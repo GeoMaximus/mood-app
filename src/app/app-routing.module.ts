@@ -7,7 +7,8 @@ import { NotfoundPageComponent } from './pages/notfound-page/notfound-page.compo
 import { UserPageComponent } from './pages/user-page/user-page.component';
 
 const routes: Routes = [
-
+  {path: '', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
   { path: 'user', component: UserPageComponent},
   { path: 'manager', component: ManagerPageComponent},
   { path: '**', component: NotfoundPageComponent}

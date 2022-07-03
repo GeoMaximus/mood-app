@@ -33,14 +33,10 @@ import { BrowserModule } from '@angular/platform-browser';
     FormComponent,
     ManagerPageComponent,
     NotfoundPageComponent,
-    LoginPageComponent,
-    SignupPageComponent,
     ChartComponent,
     ModalComponent,
     LineGraphComponent,
     DoughnutChartComponent,
-    LoginComponent,
-    RegisterComponent
   ],
   imports: [
     BrowserModule,
