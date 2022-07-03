@@ -1,28 +1,34 @@
-import { Component, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, SimpleChanges } from '@angular/core';
+import {
+  Component,
+  Input,
+  OnInit,
+  Output,
+  EventEmitter,
+  OnDestroy,
+} from '@angular/core';
 
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.css']
+  styleUrls: ['./modal.component.css'],
 })
-export class ModalComponent implements OnInit, OnDestroy, OnChanges {
-
-  @Input() isModalOpen = false;
-  @Output() toggleModal: EventEmitter<boolean> = new EventEmitter<boolean>();
-  constructor() { }
-
-  closeModal() {
-    this.toggleModal.emit(false);
+export class ModalComponent implements OnInit, OnDestroy {
+  constructor() {}
+  @Input() title: string = '';
+  @Input() body: string = '';
+  @Output() closeMeEvent = new EventEmitter();
+  @Output() confirmEvent = new EventEmitter();
+  ngOnInit(): void {
+    console.log('Modal init');
   }
-  ngOnChanges(changes: SimpleChanges): void {
 
-    throw new Error('Method not implemented.');
+  closeMe() {
+    this.closeMeEvent.emit();
+  }
+  confirm() {
+    this.confirmEvent.emit();
   }
   ngOnDestroy(): void {
-    throw new Error('Method not implemented.');
+    console.log(' Modal destroyed');
   }
-
-  ngOnInit(): void {
-  }
-
 }

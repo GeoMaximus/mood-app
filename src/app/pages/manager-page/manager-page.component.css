@@ -14,3 +14,8 @@
     border: 3px solid black;
     text-align: center;
 }
+
+.modal-container{
+    display: flex;
+    justify-content: center;
+}

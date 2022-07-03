@@ -1,5 +1,7 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, ViewChild, ViewContainerRef } from '@angular/core';
+import { Subscription } from 'rxjs/internal/Subscription';
 import { IUser } from 'src/app/models/iuser';
+import { ModalService } from 'src/app/shared/modal.service';
 
 @Component({
   selector: 'app-user-card',
@@ -7,15 +9,22 @@ import { IUser } from 'src/app/models/iuser';
   styleUrls: ['./user-card.component.css']
 })
 export class UserCardComponent implements OnInit {
-  @Input() user: IUser | undefined;
-  @Output() userClicked: EventEmitter<IUser> = new EventEmitter<IUser>();
-  constructor() { }
+  constructor(private modalService: ModalService) {}
 
-  ngOnInit(): void {
+  @ViewChild('modal', { read: ViewContainerRef })
+  entry!: ViewContainerRef;
+  sub!: Subscription;
+
+  ngOnInit(): void {}
+  createModal() {
+    this.sub = this.modalService
+      .openModal(this.entry, 'Are you sure ?', 'click confirm or close')
+      .subscribe((v) => {
+        //your logic
+      });
   }
-
-  viewUser() {
-    this.userClicked.emit(this.user);
+  ngOnDestroy(): void {
+    if (this.sub) this.sub.unsubscribe();
   }
 
 }
