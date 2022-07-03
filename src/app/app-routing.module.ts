@@ -5,7 +5,6 @@ import { RegisterComponent } from './components/register/register.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { ManagerPageComponent } from './pages/manager-page/manager-page.component';
 import { NotfoundPageComponent } from './pages/notfound-page/notfound-page.component';
-import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { UserPageComponent } from './pages/user-page/user-page.component';
 
 const routes: Routes = [
@@ -14,7 +13,6 @@ const routes: Routes = [
   { path: 'user', component: UserPageComponent},
   { path: 'manager', component: ManagerPageComponent},
   { path: '**', component: NotfoundPageComponent}
-
 ];
 
 @NgModule({

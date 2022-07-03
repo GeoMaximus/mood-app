@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private scroller: ViewportScroller, private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  scrollToDoughnutChart() {
+    this.scroller.scrollToAnchor("doughnut")
+  }
+
+  scrollToBarChart() {
+    this.scroller.scrollToAnchor("bar")
+  }
+
+  scrollToLineChart() {
+    this.scroller.scrollToAnchor("line")
   }
 
 }
