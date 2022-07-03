@@ -1,5 +1,4 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,11 +16,11 @@ import { ChartComponent } from './components/chart/chart.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { LineGraphComponent } from './components/line-graph/line-graph.component';
 import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-chart.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginModule } from './modules/login/login.module';
 import { RegisterModule } from './modules/register/register.module';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({
@@ -46,7 +45,6 @@ import { RegisterModule } from './modules/register/register.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NoopAnimationsModule,
     LoginModule,
     RegisterModule
   ],
