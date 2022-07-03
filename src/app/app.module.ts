@@ -17,6 +17,8 @@ import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-cha
 import { LoginModule } from './modules/login/login.module';
 import { RegisterModule } from './modules/register/register.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { LoginRoutingModule } from './modules/login/login-routing.module';
+import { RegisterRoutingModule } from './modules/register/register-routing.module';
 
 
 @NgModule({
