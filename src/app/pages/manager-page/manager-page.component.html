@@ -1,3 +1,4 @@
+
 <div class="container">
     <app-header></app-header>
     <div class="roulette-user-cards">
@@ -7,9 +8,13 @@
         <app-user-card></app-user-card>
         <app-user-card></app-user-card>
     </div>
+        <app-doughnut-chart></app-doughnut-chart>
         <app-chart></app-chart>
-    <div class="line-graph">
         <app-line-graph></app-line-graph>
-    </div>
+
+    <app-modal>
+        [isModalOpen]="isModalOpen"
+        (toggleModal)="toggleModal($event)"
+    </app-modal>
     <app-footer></app-footer>
 </div>

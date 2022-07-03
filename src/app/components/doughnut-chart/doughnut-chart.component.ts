@@ -1,20 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { Chart } from 'chart.js';
+import * as Chart from 'chart.js';
 
 @Component({
-  selector: 'app-chart',
-  templateUrl: './chart.component.html',
-  styleUrls: ['./chart.component.css']
+  selector: 'app-doughnut-chart',
+  templateUrl: './doughnut-chart.component.html',
+  styleUrls: ['./doughnut-chart.component.css']
 })
-export class ChartComponent implements OnInit {
+export class DoughnutChartComponent implements OnInit {
 
   constructor() { }
+
   ngOnInit(): void {
-    const myChart = new Chart("bar-chart", {
-      type: 'bar',
+    const myChart = new Chart("doughnut-chart", {
+      type: 'doughnut',
       data: {
         labels: ['Bad', 'So and so', 'Good', 'Very good', 'Amazing'],
         datasets: [{
+          label: '# of Votes',
           data: [7, 17, 57, 37, 17, 27],
           backgroundColor: [
             'rgba(255, 99, 132, 0.2)',

@@ -11,7 +11,7 @@ export class LineGraphComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    const myChart = new Chart("myChart", {
+    const myChart = new Chart("line-graph", {
       type: 'line',
       data: {
         labels: ['Bad', 'So and so', 'Good', 'Very good', 'Amazing'],

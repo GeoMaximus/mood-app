@@ -15,6 +15,7 @@ import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { ChartComponent } from './components/chart/chart.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { LineGraphComponent } from './components/line-graph/line-graph.component';
+import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-chart.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LineGraphComponent } from './components/line-graph/line-graph.component
     SignupPageComponent,
     ChartComponent,
     ModalComponent,
-    LineGraphComponent
+    LineGraphComponent,
+    DoughnutChartComponent
   ],
   imports: [
     BrowserModule,
