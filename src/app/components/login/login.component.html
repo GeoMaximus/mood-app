@@ -12,14 +12,14 @@
     <div class="input">
       <mat-form-field appearance="fill">
         <mat-label>Email Address</mat-label>
-        <input matInput #email (keyup)="setEmail(email.value)">
+        <input matInput #email id="email" (keyup)="setEmail(email.value)">
       </mat-form-field>
     </div>
 
     <div class="input">
       <mat-form-field appearance="fill">
         <mat-label>Password</mat-label>
-        <input type="password" matInput #password (keyup)="setPassword(password.value)">
+        <input type="password" id="password" matInput #password (keyup)="setPassword(password.value)">
       </mat-form-field>
     </div>
 

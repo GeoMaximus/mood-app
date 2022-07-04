@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import { User } from 'src/app/models/user';
 
 @Component({
   selector: 'app-user-page',
@@ -6,10 +7,12 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./user-page.component.css']
 })
 export class UserPageComponent implements OnInit {
-
+ 
+  user:User = new User();
   constructor() { }
 
   ngOnInit(): void {
+    this.user.firstName = 'John';
   }
 
 }

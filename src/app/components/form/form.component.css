@@ -1,14 +1,15 @@
 .form-container {
     /* border: 1px solid #ccc; */
     width: 80%;
-    margin-left: 130px;
+    margin: 0 auto;
 }
 
 .form-question {
+    font-weight: 300;
     padding: 10px;
     text-align: center;
     font-size: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .table {
@@ -31,8 +32,8 @@
 
 .form_emoji {
     border-radius: 50px;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin: 20px;
 }
 
@@ -48,11 +49,12 @@
     font-size: 18px;
     font-family: 'Cardo', serif;
     width: 80%;
-    height: 40px;
+    /* height: 40px; */
     box-sizing: border-box;
     padding-left: 10px;
     overflow: auto;
-    margin-left: 110px;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .form-buttons {
@@ -69,14 +71,14 @@
     background: white;
     border: 1px solid #9B9B9B;
     border-radius: 50px;
-    height: 40px;
-    width: 100px;
+    height: 60px;
+    width: 150px;
     text-transform: uppercase;
     cursor: pointer;
 }
 
 .submit-btn {
-    margin-left: 120px;
+    margin-left: 150px;
 }
 
 .submit-btn:hover {
@@ -85,7 +87,7 @@
 }
 
 .reset-btn {
-    margin-right: 120px;
+    margin-right: 150px;
 }
 
 .reset-btn:hover {

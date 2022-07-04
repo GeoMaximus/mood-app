@@ -17,6 +17,15 @@ import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-cha
 import { LoginModule } from './modules/login/login.module';
 import { RegisterModule } from './modules/register/register.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginService } from './shared/login.service';
 
 
 @NgModule({
@@ -33,12 +42,21 @@ import { BrowserModule } from '@angular/platform-browser';
     ModalComponent,
     LineGraphComponent,
     DoughnutChartComponent,
+    SidenavComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LoginModule,
-    RegisterModule
+    RegisterModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDividerModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    LoginModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

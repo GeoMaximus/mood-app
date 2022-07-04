@@ -5,6 +5,7 @@ import { LoginRoutingModule } from './login-routing.module';
 import { LoginComponent } from 'src/app/components/login/login.component';
 import { MatInputModule } from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import { LoginService } from 'src/app/shared/login.service';
 
 @NgModule({
   declarations: [LoginComponent],

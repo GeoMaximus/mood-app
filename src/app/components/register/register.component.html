@@ -33,7 +33,7 @@
       <div class="input">
         <mat-form-field appearance="fill">
           <mat-label>Password</mat-label>
-          <input type="password"matInput #password (keyup)="setPassword(password.value)">
+          <input type="password" matInput #password (keyup)="setPassword(password.value)">
         </mat-form-field>
       </div>
 
@@ -45,9 +45,7 @@
         <mat-form-field appearance="fill">
             <mat-label >Select Manager</mat-label>
             <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-              <mat-option value="two">Third option</mat-option>
+              <mat-option *ngFor="let manager of managers" value="{{manager}}" #manager (keyup)="setManager(manager)">{{manager.FirstName}}</mat-option>
             </mat-select>
           </mat-form-field>
       </div>
