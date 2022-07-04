@@ -13,7 +13,7 @@ export class ChartComponent implements OnInit {
     const myChart = new Chart("bar-chart", {
       type: 'bar',
       data: {
-        labels: ['Bad', 'So and so', 'Good', 'Very good', 'Amazing', 'Perfect'],
+        labels: ['Five days ago', 'Four days ago', 'Three days ago', 'Two days ago', 'Yesterday', 'Today'],
         datasets: [{
           data: [7, 17, 57, 37, 17, 27],
           backgroundColor: [
