@@ -1,10 +1,19 @@
 <div class="modal-container">
   <div class="modal-content">
-    <h1 class="title">{{ title }}</h1>
-    <p class="body">{{ body }}</p>
-    <div class="btn-container">
+    <span id='close' class="close" (click)="closeMe()">&times;</span>
+    <img
+      src="https://thumbs.dreamstime.com/b/creative-illustration-default-avatar-profile-placeholder-isolated-background-art-design-grey-photo-blank-template-mockup-144857620.jpg"
+      alt="John" class="profile-picture">
+      <img class="user-emoji" src="https://image.similarpng.com/very-thumbnail/2020/06/3D-cute-love-emoji-vector-PNG.png">
+    <h2 class="name">John Doe</h2>
+    <h3 class="department">Department</h3>
+    <p>Today's feedback</p>
+    <p>user.justification</p>
+    <p>user.improvment</p>
+    <app-line-graph></app-line-graph>
+    <!-- <div class="btn-container">
       <button (click)="closeMe()">close</button>
       <button (click)="confirm()">Confirm</button>
-    </div>
+    </div> -->
   </div>
 </div>

@@ -3,29 +3,42 @@
                 <p class="form-question">How would you rate your mood today?</p>
                 <div class="table">
                         <ul class="list-emoji">
-                                <li><img class="form_emoji"
-                                                src="https://image.similarpng.com/very-thumbnail/2021/09/Sad-emoji-face-on-transparent-backround-PNG.png">
+                                <li><img ng-click="$scope.toggleSize()" class="form_emoji" id="emoji1"
+                                                src="assets/images/1.png"
+                                                #emoji (click)="setValue(1)">
                                 </li>
-                                <li><img class="form_emoji"
-                                                src="https://image.similarpng.com/very-thumbnail/2021/09/Yellow-emoji-face-design-on-transparent-background-PNG.png">
+                                <li><img class="form_emoji"  id="emoji2"
+                                                src="assets\images\2.png" 
+                                                #emoji (click)="setValue(2)">
                                 </li>
-                                <li><img class="form_emoji"
-                                                src="https://image.similarpng.com/very-thumbnail/2021/09/Grimacing-Face-Emoji-on-transparent-background-PNG.png">
+                                <li><img class="form_emoji"  id="emoji3"
+                                                src="assets\images\3.png"
+                                                #emoji (click)="setValue(3)">
                                 </li>
-                                <li><img class="form_emoji"
-                                                src="https://image.similarpng.com/very-thumbnail/2021/09/Funny-emoji-face-on-transparent-background-PNG.png">
+                                <li><img class="form_emoji"  id="emoji4"
+                                                src="assets\images\4.png"
+                                                #emoji (click)="setValue(4)">
                                 </li>
-                                <li><img class="form_emoji"
-                                                src="https://image.similarpng.com/very-thumbnail/2020/06/3D-cute-love-emoji-vector-PNG.png">
+                                <li><img class="form_emoji"  id="emoji5"
+                                                src="assets\images\5.png"
+                                                #emoji (click)="setValue(5)">
+                                </li>
+                                <li><img class="form_emoji"  id="emoji6"
+                                                src="assets\images\6.png"
+                                                #emoji (click)="setValue(6)">
                                 </li>
                         </ul>
                 </div>
-                <p class="form-question">Please, justify your choice</p>
-                <input class="question-text" type="text">
-                <p class="form-question">What can we improve?</p>
-                <input class="question-text" type="text">
+                <div class="form-input">
+                        <p class="form-question">Please, justify your choice in a few words</p>
+                        <textarea class="question-text" type="text" #justification
+                                (keyup)="setJustification(justification.value)" rows="4" cols="30"></textarea>
+                        <p class="form-question">What can we improve?</p>
+                        <textarea class="question-text" type="text" #improvment
+                                (keyup)="setImprovment(improvment.value)" rows="4" cols="30"></textarea>
+                </div>
                 <div class="form-buttons">
-                        <input class="btn submit-btn" type="submit" value="Submit">
+                        <input class="btn submit-btn" type="button" value="Submit" (click)="ifSubmitPressed()">
                         <input class="btn reset-btn" type="reset" value="Reset">
                 </div>
         </form>

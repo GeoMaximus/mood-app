@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
-import { IUser } from 'src/app/models/iuser';
-import { Subscription } from 'rxjs';
+import { User } from 'src/app/models/user';
+import { empty, Subscription } from 'rxjs';
 import { ModalService } from 'src/app/shared/modal.service';
 @Component({
   selector: 'app-manager-page',
@@ -8,6 +8,7 @@ import { ModalService } from 'src/app/shared/modal.service';
   styleUrls: ['./manager-page.component.css']
 })
 export class ManagerPageComponent implements OnInit {
+
   constructor(private modalService: ModalService) {}
 
   @ViewChild('modal', { read: ViewContainerRef })

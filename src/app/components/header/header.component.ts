@@ -14,16 +14,4 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  scrollToDoughnutChart() {
-    this.scroller.scrollToAnchor("doughnut")
-  }
-
-  scrollToBarChart() {
-    this.scroller.scrollToAnchor("bar")
-  }
-
-  scrollToLineChart() {
-    this.scroller.scrollToAnchor("line")
-  }
-
 }

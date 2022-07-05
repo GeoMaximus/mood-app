@@ -18,8 +18,15 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginModule } from './modules/login/login.module';
 import { RegisterModule } from './modules/register/register.module';
 import { BrowserModule } from '@angular/platform-browser';
-import { LoginRoutingModule } from './modules/login/login-routing.module';
-import { RegisterRoutingModule } from './modules/register/register-routing.module';
+
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginService } from './shared/login.service';
 
 
 @NgModule({
@@ -42,7 +49,15 @@ import { RegisterRoutingModule } from './modules/register/register-routing.modul
     AppRoutingModule,
     NoopAnimationsModule,
     LoginModule,
-    RegisterModule
+    RegisterModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDividerModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    LoginModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

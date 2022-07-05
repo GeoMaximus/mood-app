@@ -13,22 +13,24 @@ export class ChartComponent implements OnInit {
     const myChart = new Chart("bar-chart", {
       type: 'bar',
       data: {
-        labels: ['Bad', 'So and so', 'Good', 'Very good', 'Amazing'],
+        labels: ['Five days ago', 'Four days ago', 'Three days ago', 'Two days ago', 'Yesterday', 'Today'],
         datasets: [{
           data: [7, 17, 57, 37, 17, 27],
           backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)'
+            'rgba(12, 26, 156, 0.5)',
+            'rgba(136, 143, 215, 0.5)',
+            'rgba(12, 26, 156, 0.5)',
+            'rgba(93, 100, 184, 0.5)',
+            'rgba(12, 26, 156, 0.5)',
+            'rgba(136, 143, 215, 0.5)',
           ],
           borderColor: [
-            'rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)'
+            'rgba(12, 26, 156, 1)',
+            'rgba(136, 143, 215, 1)',
+            'rgba(12, 26, 156, 1)',
+            'rgba(93, 100, 184, 1)',
+            'rgba(12, 26, 156, 1)',
+            'rgba(136, 143, 215, 1)',
           ],
           borderWidth: 1
         }]

@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output, ViewChild, ViewContainerRef } from '@angular/core';
 import { Subscription } from 'rxjs/internal/Subscription';
-import { IUser } from 'src/app/models/iuser';
+import { User } from 'src/app/models/user';
 import { ModalService } from 'src/app/shared/modal.service';
 
 @Component({
