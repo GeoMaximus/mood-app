@@ -40,14 +40,23 @@ export class LoginComponent implements OnInit, OnDestroy {
   ifSignInPressed(){
     if(this.user.email!='' && this.user.password!=''){
       this.empty=false;
-      this.loginService.login(this.user).subscribe(()=>{
-        alert("successfully logged in");
-      },error=>alert("somethings wrong"))
+      // this.loginService.login(this.user).subscribe(()=>{
+      //   alert("successfully logged in");
+      // },error=>alert("somethings wrong"))
       console.log(this.user)
     }
     else{
       this.empty=true;
     } 
+  }
+
+  logIn(){
+    if(this.user.email=="email@email.com"&&this.user.password=="parola")
+    this.router.navigate(['/manager']);
+    else if(this.user.email=="useremail@email.com"&&this.user.password=="parola")
+    this.router.navigate(['/user']);
+    else
+    console.log("incorrect data");
   }
 
 }

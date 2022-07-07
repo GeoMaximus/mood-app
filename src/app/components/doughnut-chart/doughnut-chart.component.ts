@@ -24,12 +24,12 @@ export class DoughnutChartComponent implements OnInit {
             // 'rgba(255, 206, 86, 1)',
             // 'rgba(75, 192, 192, 1)',
             // 'rgba(153, 102, 255, 1)'
-            'rgba(12, 26, 156, 0.5)',
-            'rgba(136, 143, 215, 0.5)',
-            'rgba(12, 26, 156, 0.5)',
-            'rgba(93, 100, 184, 0.5)',
-            'rgba(12, 26, 156, 0.5)',
-            'rgba(136, 143, 215, 0.5)',
+            "rgba(244, 37, 57, 0.7)",
+            "rgba(246, 95, 100, 0.7)",
+            "rgba(254, 130, 44, 0.7)",
+            "rgba(255, 207, 64, 0.7)",
+            "rgba(38, 221, 129, 0.7)",
+            "rgba(27, 196, 137, 0.7)"
           ],
           borderColor: [
             // 'rgba(255, 99, 132, 1)',
@@ -37,12 +37,12 @@ export class DoughnutChartComponent implements OnInit {
             // 'rgba(255, 206, 86, 1)',
             // 'rgba(75, 192, 192, 1)',
             // 'rgba(153, 102, 255, 1)'
-            'rgba(12, 26, 156, 0.5)',
-            'rgba(136, 143, 215, 0.5)',
-            'rgba(12, 26, 156, 0.5)',
-            'rgba(93, 100, 184, 0.5)',
-            'rgba(12, 26, 156, 0.5)',
-            'rgba(136, 143, 215, 0.5)',
+            "rgba(244, 37, 57, 1)",
+            "rgba(246, 95, 100, 1)",
+            "rgba(254, 130, 44, 1)",
+            "rgba(255, 207, 64, 1)",
+            "rgba(38, 221, 129, 1)",
+            "rgba(27, 196, 137, 1)"
           ],
           borderWidth: 1
         }]
@@ -51,7 +51,7 @@ export class DoughnutChartComponent implements OnInit {
         scales: {
           yAxes: [{
             ticks: {
-              beginAtZero: true
+              beginAtZero: true,
             }
           }]
         }

@@ -1,8 +1,10 @@
 export class User {
     id!:number;
-    firstName!:string;
+    name!:string;
     lastName!:string;
     email!:string;
     password!:string;
     managerId!:number;
+    thumbnailUrl!:string;
+    moodLevel!:number;
 }

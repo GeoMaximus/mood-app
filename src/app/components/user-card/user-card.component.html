@@ -1,11 +1,11 @@
-<div class="user_card">
+<div class="user_card" *ngFor="let user of users">
   <div class="thumbnail">
-    <img src="https://thumbs.dreamstime.com/b/creative-illustration-default-avatar-profile-placeholder-isolated-background-art-design-grey-photo-blank-template-mockup-144857620.jpg" alt="John" style="width:100%">
+    <img src={{user.thumbnailUrl}} alt="John" style="width:100%">
   </div>
     <div class="details">
-    <h1>John Doe</h1>
-    <p>I'm feeling</p>
-    <img class="user-emoji" src="https://image.similarpng.com/very-thumbnail/2020/06/3D-cute-love-emoji-vector-PNG.png">
+    <h1>{{user.name}}</h1>
+    <p>Today I'm feeling</p>
+    <img class="user-emoji" src="assets\images\{{user.moodLevel}}.png">
   </div>
     <button (click)="createModal()">See more...</button>
     <div #modal></div> 

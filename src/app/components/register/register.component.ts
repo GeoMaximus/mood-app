@@ -1,4 +1,3 @@
-import { fn } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Manager } from 'src/app/models/manager';
@@ -36,11 +35,11 @@ export class RegisterComponent implements OnInit {
 
   setFirstName(fname: string) {
     // this.fname = fname;
-    this.user.firstName = fname;
+    this.user.name = fname;
   }
   setLastName(lname: string) {
     // this.lname = lname;
-    this.user.lastName = lname;
+    this.user.name = lname;
   }
 
   setEmail(email: string) {
@@ -59,7 +58,7 @@ export class RegisterComponent implements OnInit {
   }
 
   ifSignUpPressed() {
-    if (this.user.firstName != '' && this.user.lastName != '' && this.user.email != '' && this.user.password != '') {
+    if (this.user.name != '' && this.user.name != '' && this.user.email != '' && this.user.password != '') {
       this.registerService.register(this.user).subscribe(date => {alert("success sign up")}, error => alert("somethings wrong"));
       console.log(this.user);
       this.empty = false;
